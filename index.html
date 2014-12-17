@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+ try pg with gh
+</head>
+
+
+<body>
+ <button id="try">doit</button>
+<button id="clear">clear</button>
+
+<div id="result"> </div>
+
+<script src="js/zepto.min.js"> </script>
+<script src="js/silly.js"> </script>
+<script>
+$('#try').click(function(){
+	silly.doit($('#result'));
+});
+$('#clear').click(function(){
+	$('#result').html('');
+});
+
+</script>
+</body>
+</html>
